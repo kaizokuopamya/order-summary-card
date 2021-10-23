@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+:root {
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--pale-blue);
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.hero {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0px 22px 38px -15px rgba(113, 130, 214, 0.8);
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.hero-content {
+  width: 83%;
+  margin: 0 auto;
+}
+
+.hero-content__title {
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content__subtitle {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--desaturated-blue);
+}
+
+.plan {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background-color: var(--very-pale-blue);
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1em 0;
+  width: 90%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: var(--bright-blue);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.secondary-btn {
+  color: var(--desaturated-blue);
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.primary-btn:hover {
+  background-color: hsl(245, 75%, 57%);
+}
+
+.secondary-btn:hover {
+  color: #000;
+}
+
+.attribution {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 100%, 50%);
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
